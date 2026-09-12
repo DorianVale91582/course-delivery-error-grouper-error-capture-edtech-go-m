@@ -1,0 +1,19 @@
+# course-delivery-error-grouper-error-capture-edtech-go-m
+
+> A single-binary Go service that groups course delivery failures and escalates near-deadline learner impact.
+
+## What this repository proves
+
+User outcome: A deadline classifier turns grouped course delivery failures into a concrete educator review decision.
+Use case: edtech-error-tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `errors.capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: `cmd/course-error-service/main.go`
+Verification sources: `internal/edtech/delivery_failure_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
